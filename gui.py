@@ -14,14 +14,7 @@ def store_values():
     naps = E4.get()
     steps = E5.get()
     mood = E6.get()
-    cont = E7.get()
 
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> a517107407832b56310ad8332fecd542f5909e22
 
 top = Tk()
 L1 = Label(top, text = "Please input today's date (eg. 1-Aug-20): ")
@@ -48,10 +41,6 @@ L6 = Label(top, text = "How was your mood? ")
 L6.place(x = 10, y = 210)
 E6 = Entry(top, bd = 3)
 E6.place(x = 150, y = 210)
-L7 = Label(top, text = "Do you want to continue? ")
-L7.place(x = 10, y = 250)
-E7 = Entry(top, bd = 3)
-E7.place(x = 170, y = 250)
 B = Button(top, text = "Submit", command = store_values, fg = "white", bg = "blue")
 B.place(x = 100, y = 290)
 top.geometry("700x500+10+10")
