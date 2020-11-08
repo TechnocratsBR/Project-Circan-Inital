@@ -16,6 +16,12 @@ def store_values():
     mood = E6.get()
     cont = E7.get()
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> a517107407832b56310ad8332fecd542f5909e22
 
 top = Tk()
 L1 = Label(top, text = "Please input today's date (eg. 1-Aug-20): ")

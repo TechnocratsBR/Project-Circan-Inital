@@ -2,10 +2,14 @@ import pandas as pd
 from openpyxl import load_workbook
 from logfunctions import openxlsx
 import sys
+from gui import *
+import os.path
 
-openxlsx()
+if os.path.isfile('circanlog.xlsx') is False:
+    openxlsx()
 
 while True:
+<<<<<<< HEAD
     day = input("Please input today's date (eg. 1-Aug-20): ")
     sleep = input("At what time did you exactly sleep? ")
     wake = input("What time did you wake up? ")
@@ -14,6 +18,8 @@ while True:
     mood = input("How was your mood? ")
     cont = input("Would you like to add more data? ")
 
+=======
+>>>>>>> a517107407832b56310ad8332fecd542f5909e22
     # new dataframe with same columns
     df = pd.DataFrame({'Days': [day],
                     'Sleep': [sleep],
@@ -33,6 +39,7 @@ while True:
     df.to_excel(writer,index=False,header=False,startrow=len(reader)+1)
 
     writer.close()
+    
     if cont == 'No':
         break
         sys.exit()
