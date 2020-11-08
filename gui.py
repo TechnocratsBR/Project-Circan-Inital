@@ -7,6 +7,7 @@ def store_values():
     global naps
     global steps
     global mood
+    global cont
     day = E1.get()
     sleep = E2.get()
     wake = E3.get()
@@ -15,13 +16,6 @@ def store_values():
     mood = E6.get()
     cont = E7.get()
 
-    E1.delete(0, END)
-    E2.delete(0, END)
-    E3.delete(0, END)
-    E4.delete(0, END)
-    E5.delete(0, END)
-    E6.delete(0, END)
-    E7.delete(0, END)
 
 
 
