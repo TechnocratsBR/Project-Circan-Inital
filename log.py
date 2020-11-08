@@ -7,12 +7,12 @@ openxlsx()
 
 while True:
     day = input("Please input today's date (eg. 1-Aug-20): ")
-    sleep = input("At what time did you exactly sleep?")
-    wake = input("What time did you wake up")
-    naps = input('Did you take a nap? If so, how long?')
-    steps = input("How many steps did you take today?")
-    mood = input("How was your mood?")
-    cont = input("Would you like to add more data?")
+    sleep = input("At what time did you exactly sleep? ")
+    wake = input("What time did you wake up? ")
+    naps = input('Did you take a nap? If so, how long? ')
+    steps = input("How many steps did you take today? ")
+    mood = input("How was your mood? ")
+    cont = input("Would you like to add more data? ")
 
     # new dataframe with same columns
     df = pd.DataFrame({'Days': [day],
