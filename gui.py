@@ -14,6 +14,15 @@ def store_values():
     steps = E5.get()
     mood = E6.get()
 
+    E1.delete(0, END)
+    E2.delete(0, END)
+    E3.delete(0, END)
+    E4.delete(0, END)
+    E5.delete(0, END)
+    E6.delete(0, END)
+
+    print(day, sleep, wake, naps, steps, mood)
+
 
 top = Tk()
 L1 = Label(top, text = "Please input today's date (eg. 1-Aug-20): ")
