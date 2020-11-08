@@ -7,6 +7,7 @@ def store_values():
     global naps
     global steps
     global mood
+    global cont
     day = E1.get()
     sleep = E2.get()
     wake = E3.get()
@@ -14,16 +15,6 @@ def store_values():
     steps = E5.get()
     mood = E6.get()
     cont = E7.get()
-
-    E1.delete(0, END)
-    E2.delete(0, END)
-    E3.delete(0, END)
-    E4.delete(0, END)
-    E5.delete(0, END)
-    E6.delete(0, END)
-    E7.delete(0, END)
-
-
 
 
 top = Tk()
@@ -55,7 +46,7 @@ L7 = Label(top, text = "Do you want to continue? ")
 L7.place(x = 10, y = 250)
 E7 = Entry(top, bd = 3)
 E7.place(x = 170, y = 250)
-B = Button(top, text = "Submit", command = store_values)
+B = Button(top, text = "Submit", command = store_values, fg = "white", bg = "blue")
 B.place(x = 100, y = 290)
 top.geometry("700x500+10+10")
 top.mainloop()
